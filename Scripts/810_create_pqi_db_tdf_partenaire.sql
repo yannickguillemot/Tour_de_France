@@ -1,0 +1,6 @@
+
+  CREATE OR REPLACE PACKAGE "G16_TDF"."PA_PARTENAIRE" AS 
+  TYPE sqlcur IS REF CURSOR;
+  FUNCTION GetForCourse(cnum number) return sqlcur;
+END PA_PARTENAIRE;
+/

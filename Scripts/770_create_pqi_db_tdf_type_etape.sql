@@ -1,0 +1,6 @@
+
+  CREATE OR REPLACE PACKAGE "G16_TDF"."PA_TYPE_ETAPE" AS 
+  TYPE sqlcur IS REF CURSOR;
+  FUNCTION Get(tenum number) return TYPE_ETAPE%rowtype;
+END PA_TYPE_ETAPE;
+/
